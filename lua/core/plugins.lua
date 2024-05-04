@@ -14,7 +14,9 @@ vim.opt.rtp:prepend(lazypath)
 -- Add plugins here
 require("lazy").setup({
     { "phaazon/hop.nvim" },
+    -- colorscheme
     { "morhetz/gruvbox" },
+    -- tree for dirsearch
     {
       "nvim-neo-tree/neo-tree.nvim",
       branch = "v3.x",
@@ -46,12 +48,13 @@ require("lazy").setup({
           },
       },
     },
+    -- fast search 'ff' - find file or 'fw' - find word
     { 'nvim-telescope/telescope.nvim',
       tag = '0.1.6',
       dependencies = { 'nvim-lua/plenary.nvim' },
     },
+    -- formatter for golang
     { 'jose-elias-alvarez/null-ls.nvim',
       ft = 'go',
     },
 })
-
